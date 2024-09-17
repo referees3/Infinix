@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RfVendas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+</head>
+<body>
+<header>
+    <div class="txt">Bem-vindo(a)!<br>INFI-NiX</div>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Pesquisar produtos..." aria-label="Pesquisar produtos">
+        <button type="button" onclick="searchProducts()">Pesquisar</button>
+    </div>
+    <p0>Versão: Pt-Br</p0>
+    <br>
+    <p0>Negociações entre em contato com, vendedor.</p0>
+    <div id="purchase-count"></div>
+    <span class="comment-icon" onclick="openComments()">🌐</span>
+</header>
+
+    <nav>
+        <a href="https://referees3.github.io/Vendedores.html">Lojas</a>
+        <a href="região-para-entregas.html">RG</a>
+        <a href="Sobre-loja.html">Sobre</a>
+    </nav>
+    <section class="announcement">
+        <p>Confira nossos últimos lançamentos e novidades em produtos! Descontos de até 95%🤑!</p>
+        <div class="image-carousel">
+            <img src="img-vds/14.jpg" alt="*" onclick="changeMainImage(this)">
+            <img src="img-vds/16.jpg" alt="*" onclick="changeMainImage(this)">
+            <img src="img-vds/24h.jpg" alt="*" onclick="changeMainImage(this)">
+            <img src="img-vds/50off.jpg" alt="*" onclick="changeMainImage(this)">
+            <img src="img-vds/30off.jpg" alt="*" onclick="changeMainImage(this)">
+            <img src="img-vds/carrinho432.gif" alt="*" onclick="changeMainImage(this)">
+            <img src="img-vds/ttyu.gif" alt="*" onclick="changeMainImage(this)">
+        </div>
+        <img id="mainImage" src="img-vds/50off.jpg" class="main-image" alt="Imagem principal">
+    </section>
+    <div class="products" id="productsContainer">
+
+
+<div class="product" data-category="moda">
+    <img src="img-vds/16.jpg" alt="Produto 1" onclick="showProductDetails(this.parentElement)">
+    <div class="product-info">
+        <h2>Seguidores Para redes Sociais</h2>
+        <p class="title">LOJA: #infinix oficial <img src="img-vds/verificado.png" alt="Verificado"></p>
+        <p>Venda de seguidores Curtidas etc...<br><a href="tabela-loja.html">Clique aqui</a></p>
+        <p> Valor dos produtos👆 </p>
+        <a href="tabela-loja.html"><button>Comprar</button></a>
+        <p>id: 00001</p>
+    </div>
+</div>
+        
+        
+        <!-- Adicione mais produtos aqui -->
+    </div>
+        <p>Produtos 100% originais e confiáveis, receba seu produto ou seu dinheiro de volta até 24h!</p>
+        <br>
+        <p>infinix oficial</p>
+<footer>
+<nav class="footer-menu">
+    <a href="#" id="categoria-moda">
+        <img src="img-vds/moda.jpg" alt="Moda">
+    </a>
+    <a href="#" id="categoria-eletronicos">
+        <img src="img-vds/eletronicos.jpg" alt="Eletrônicos">
+    </a>
+    <a href="#" id="categoria-ofertas">
+        <img src="img-vds/ofertas.jpg" alt="Ofertas">
+    </a>
+    <a href="#" id="categoria-perfil">
+        <img src="img-vds/perfil.jpg" alt="Perfil">
+    </a>
+</nav>
+
+</footer>
+
+
+    <!-- Modal de Comentários -->
+    <div id="commentsModal" class="comments-modal">
+        <div class="comments-content">
+            <span class="comments-close" onclick="closeComments()">&times;</span>
+            <h2>Comentários</h2>
+            <p>Em breve: Indisponível!</p>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>

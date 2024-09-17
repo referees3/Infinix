@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Produto</title>
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <style>
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Adicione esta linha */
+}
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .image-slider {
+            flex: 1;
+            position: relative;
+        }
+
+        .image-slider img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-details {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .product-details h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .product-details p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .product-details .price {
+            font-size: 24px;
+            color: #b12704;
+            margin: 10px 0;
+        }
+
+.buy-button {
+    background-color: #ff9900;
+    color: white;
+    padding: 10px; /* Diminua o padding para reduzir a altura do botão */
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 80%; /* Ajuste a largura conforme necessário */
+    margin-top: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px; /* Diminua o tamanho da fonte */
+}
+
+
+        .buy-button:hover {
+            background-color: #e68a00;
+        }
+
+        .additional-info {
+            margin-top: 20px;
+        }
+
+        .additional-info h2 {
+            font-size: 24px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .specifications, .reviews {
+            margin-top: 10px;
+        }
+
+        .specifications ul, .reviews ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .specifications li, .reviews li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="image-slider">
+        <div><img src="img/1.jpg" alt="Imagem 1"></div>
+        <div><img src="img/2.jpg" alt="Imagem 2"></div>
+        <div><img src="img/3.jpg" alt="Imagem 3"></div>
+        <!-- Adicione mais imagens conforme necessário -->
+    </div>
+    <div class="product-details">
+        <h1>Produto tio patinhas</h1>
+        <p>Descrição detalhada do produto, destacando suas características e benefícios.</p>
+        <div class="price">R$ 43.999.999,99</div>
+        <!-- Botão de Compra -->
+        <a href="#" class="buy-button" target="_blank">Comprar Agora</a>
+
+        <!-- Informações Adicionais -->
+        <div class="additional-info">
+            <h2>Informações Adicionais</h2>
+
+            <div class="specifications">
+                <h3>Especificações Técnicas:</h3>
+                <ul>
+                    <li><strong>Dimensões:</strong> 20 x 10 x 5 cm</li>
+                    <li><strong>Peso:</strong> 1.2 kg</li>
+                    <li><strong>Material:</strong> Ouro 12KL</li>
+                    <li><strong>Cor:</strong> Dourado</li>
+                    <li><strong>Garantia:</strong> 1 mês</li>
+                </ul>
+            </div>
+
+            <div class="reviews">
+                <h3>Avaliações:</h3>
+                <ul>
+                    <li><strong>User:</strong> ★★★★☆ - Excelente produto!</li>
+                    <li><strong>User:</strong> ★★★★★ - Muito satisfeito com a compra.</li>
+                    <li><strong>User:</strong> ★★★☆☆ - Boa qualidade, mas o preço é alto.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slick Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.image-slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+    });
+</script>
+
+</body>
+</html>
